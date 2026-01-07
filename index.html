@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do List — David Chukwunonye Osigwe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container" role="main">
+    <header class="topbar">
+      <div class="brand">
+        <h1>Taskboard</h1>
+        <p class="tag">Simple • Professional • Responsive</p>
+      </div>
+    </header>
+
+    <section class="card" aria-labelledby="todo-heading">
+      <div class="input-row">
+        <input id="newTask" type="text" placeholder="Add a new task and press Enter" aria-label="Add a new task" />
+        <button id="addBtn" aria-label="Add task">Add</button>
+      </div>
+
+      <div class="controls">
+        <div class="filters" role="tablist" aria-label="Filter tasks">
+          <button class="filter active" data-filter="all" role="tab">All</button>
+          <button class="filter" data-filter="active" role="tab">Active</button>
+          <button class="filter" data-filter="completed" role="tab">Completed</button>
+        </div>
+        <div class="actions">
+          <button id="clearCompleted">Clear completed</button>
+        </div>
+      </div>
+
+      <h2 id="todo-heading" class="sr-only">To do list</h2>
+
+      <ul id="list" class="task-list" aria-live="polite"></ul>
+
+      <footer class="meta">
+        <span id="count">0 items left</span>
+        <span class="spacer"></span>
+        <small class="hint">Tip: double-click a task to edit</small>
+      </footer>
+    </section>
+
+    <footer class="foot">
+      <small>Built by David Chukwunonye Osigwe • HTML • CSS • JavaScript</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
