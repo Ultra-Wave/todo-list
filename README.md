@@ -16,4 +16,4 @@ This project allows users to manage daily tasks efficiently with data stored loc
 - JavaScript
 
 ## Live Demo
-https://ultra-wave.github.io/todo-list-app
+https://ultra-wave.github.io/todo-list/
